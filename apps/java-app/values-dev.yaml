@@ -1,0 +1,12 @@
+image:
+  # IMPORTANT: no registry; we'll load the image straight into kind
+  repository: java-app
+  tag: dev
+  pullPolicy: IfNotPresent
+
+replicas: 1
+
+hpa:
+  min: 1
+  max: 3
+  cpu: 70
